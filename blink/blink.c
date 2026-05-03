@@ -6,7 +6,7 @@
 #define PORTB  REG(0x25)
 #define PB5    5
 
-static void delay_ms(unsigned int ms) {
+static inline void delay_ms(unsigned int ms) {
     while (ms--) {
         unsigned int i = 4000;
         while (i--) {
