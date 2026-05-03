@@ -19,8 +19,8 @@ int main(void) {
     DDRB |= (1 << PB5);
     while (1) {
         PORTB |=  (1 << PB5);
-        delay_ms(1000);
+        delay_ms(250);
         PORTB &= ~(1 << PB5);
-        delay_ms(1000);
+        delay_ms(250);
     }
 }
